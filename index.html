@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Notes Trainer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <p class="eyebrow">Music Education Tool</p>
+      <h1>Scrolling Notes Trainer</h1>
+      <p class="subtitle">
+        A real-time staff-reading exercise for beginner music students.
+      </p>
+    </header>
+
+    <section class="stats" aria-label="Game statistics">
+      <article class="stat-card">
+        <span class="stat-label">Punteggio</span>
+        <strong id="scoreValue">0</strong>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Errori</span>
+        <strong id="errorValue">0</strong>
+      </article>
+
+      <article class="stat-card">
+        <span class="stat-label">Livello</span>
+        <strong id="levelValue">0</strong>
+      </article>
+    </section>
+
+    <section class="game-panel" aria-label="Scrolling staff game area">
+      <div id="staff" class="staff">
+        <div class="staff-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="measuresContainer" class="measures-container"></div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+      <button id="toggleButton" type="button">Start</button>
+      <button id="resetButton" type="button" class="secondary">Reset</button>
+
+      <div class="instructions">
+        <p><strong>Right arrow</strong>: hold to scroll the notes.</p>
+        <p><strong>Spacebar</strong>: register an error during oral reading.</p>
+        <p><strong>R</strong>: reset the exercise.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
