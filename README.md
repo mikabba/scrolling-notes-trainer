@@ -6,6 +6,10 @@ A lightweight browser-based music training tool for improving first-sight staff-
 
 The application presents randomly generated notes on a horizontally scrolling staff. Students read the notes aloud in real time while the teacher or student tracks mistakes, turning traditional note-reading drills into a continuous, measurable and time-based exercise.
 
+## Live Demo
+
+[Open the deployed application](https://mikabba.github.io/scrolling-notes-trainer/)
+
 ## Project Context
 
 This project was developed from a practical music education workflow for beginner students.
