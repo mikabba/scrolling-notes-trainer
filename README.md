@@ -2,27 +2,45 @@
 
 <img src="assets/game-interface.png" alt="Scrolling Notes Trainer interface" width="600">
 
-A lightweight web-based music education tool designed to support real-time staff-reading practice for beginner students.
+A lightweight browser-based music training tool for improving first-sight staff-reading fluency in beginner students.
 
-The application displays randomly generated notes on a scrolling staff. Students read the notes aloud while the teacher or student tracks reading errors during the exercise.
+The application presents randomly generated notes on a horizontally scrolling staff. Students read the notes aloud in real time while the teacher or student tracks mistakes, turning traditional note-reading drills into a continuous, measurable and time-based exercise.
 
 ## Project Context
 
-This project was developed as part of a practical music education workflow for beginner students.
+This project was developed from a practical music education workflow for beginner students.
 
-The goal is to make traditional staff-reading drills more dynamic by turning them into a continuous, real-time reading exercise with score progression, increasing speed and error tracking.
+The goal was to make staff-reading practice more dynamic by introducing real-time progression, increasing speed, score tracking and manual error registration. The tool is intended to support traditional solfeggio and note-reading activities, not replace them.
 
 ## Problem
 
 Beginner music students often need repeated practice to recognize notes on the staff quickly and fluently.
 
-Traditional note-reading exercises can become static and predictable. Students may recognize notes correctly when they have unlimited time, but struggle when asked to read continuously and maintain fluency.
+Traditional note-reading exercises can become static and predictable. Students may correctly identify notes when they have unlimited time, but struggle when asked to read continuously, maintain rhythm and keep up with visual progression.
 
 ## Solution
 
 Scrolling Notes Trainer introduces a moving staff-reading exercise.
 
-The student follows the scrolling notes and reads them aloud in real time. The score increases while the exercise continues, the visual progression changes over time, and errors can be registered during the activity.
+The student follows the scrolling notes and reads them aloud in real time. While the exercise continues, the score increases, the scrolling speed grows progressively and mistakes can be registered during the activity.
+
+This creates a simple but effective training loop:
+
+```text
+Generate random notes on the staff
+        |
+        v
+Student reads the notes aloud in real time
+        |
+        v
+Teacher or student tracks errors with the spacebar
+        |
+        v
+Score increases while the exercise continues
+        |
+        v
+Scrolling speed and visual progression increase over time
+```
 
 ## Main Features
 
@@ -30,7 +48,7 @@ The student follows the scrolling notes and reads them aloud in real time. The s
 - Continuous horizontal scrolling
 - Score progression during the exercise
 - Speed increase based on score
-- Error tracking with the spacebar
+- Manual error tracking with the spacebar
 - Level progression with background changes
 - Keyboard-based interaction
 - Lightweight static web implementation
@@ -57,42 +75,26 @@ The application is implemented as a lightweight front-end web tool.
 
 No build step, backend server or database is required.
 
-## Learning Workflow
-
-```text
-Generate random notes on the staff
-        |
-        v
-Student reads the notes aloud in real time
-        |
-        v
-Teacher or student tracks errors with the spacebar
-        |
-        v
-Score increases while the exercise continues
-        |
-        v
-Scrolling speed and visual progression increase over time
-```
-
 ## Classroom Use and Observed Results
 
 This tool was used as a reinforcement exercise for students who were already showing good progress with traditional note-reading methods.
 
-It was not designed to replace standard solfeggio activities, but to support and strengthen real-time staff-reading fluency. The exercise was used alongside traditional reading practice, oral note recognition and teacher-guided correction.
+It was used alongside traditional reading practice, oral note recognition and teacher-guided correction. The main goal was to improve first-sight reading fluency: students had to follow the scrolling staff and read the notes aloud while errors were registered during the exercise.
 
-The main goal was to improve first-sight reading fluency: students had to follow the scrolling staff and read the notes aloud while errors were registered during the exercise.
-
-### Evaluation approach
+### Evaluation Approach
 
 The activity was evaluated using two practical indicators:
 
 - **score**, used as a proxy for reading continuity and endurance;
 - **error count**, manually registered during the exercise.
 
-Higher scores indicate that the student was able to continue reading for a longer time while keeping up with the scrolling staff. However, the score alone is not sufficient: it must be interpreted together with the error rate.
+Higher scores indicate that the student was able to continue reading for a longer time while keeping up with the scrolling staff. However, score alone is not sufficient: it must be interpreted together with the error rate.
 
-For this reason, the most meaningful indicator is the number of errors relative to the achieved score.
+A simple classroom interpretation can be based on:
+
+```text
+error rate = number of errors / score
+```
 
 | Performance profile | Score range | Error-rate interpretation | Reading fluency |
 |---|---:|---:|---|
@@ -100,25 +102,27 @@ For this reason, the most meaningful indicator is the number of errors relative 
 | Stable fluency | Medium to high score | Moderate number of errors relative to score | The student reads continuously with occasional mistakes |
 | Strong first-sight fluency | High score | Low number of errors relative to score | The student maintains accuracy even as scrolling speed increases |
 
-### Observed outcome
+### Observed Outcome
 
 The tool was especially useful for students who had already developed basic note-recognition skills through other methods.
 
 After repeated use, their first-sight reading improved noticeably: students became faster in recognizing note positions and more confident when reading continuously.
 
-A relevant observation was that approximately 20% of the students were able to keep their error count low even while the score increased. This suggests that, for this group, the exercise supported not only longer reading endurance but also stable accuracy under increasing speed.
+In classroom use, a small group of students — approximately 20% of those observed — was able to maintain a low error count while reaching higher scores. While this should not be interpreted as formal experimental evidence, it suggests that the tool can help reinforce fluency for students who already possess basic note-recognition skills.
 
 These results should be interpreted as observational feedback from classroom use rather than as a controlled experimental study.
 
-### Score and error-rate interpretation
-
-For classroom use, the following interpretation was adopted:
+### Score and Error-Rate Interpretation
 
 | Indicator | Meaning |
 |---|---|
 | High score + high errors | Good endurance, but unstable accuracy |
 | Medium score + low errors | Good control, but limited reading duration |
 | High score + low errors | Strong fluency and reliable first-sight reading |
+
+## Why This Project Matters
+
+This project combines software development with a real educational use case. It demonstrates how a simple front-end application can support a practical teaching workflow by introducing time pressure, measurable progression and immediate feedback into traditional note-reading practice.
 
 ## Project Structure
 
@@ -150,15 +154,15 @@ index.html
 
 No build step is required.
 
-## Portfolio Relevance
+## Technical and Portfolio Relevance
 
-This project complements my main engineering portfolio by demonstrating my ability to:
+This project demonstrates the ability to:
 
-- translate a real educational need into an interactive software tool;
-- design a simple real-time learning exercise;
-- implement dynamic visual behavior using plain JavaScript;
-- structure a small front-end project for public documentation;
-- build practical tools for non-technical users.
+- identify a concrete educational problem;
+- design an interactive real-time learning exercise;
+- implement animation, state management and keyboard interaction with plain JavaScript;
+- create a lightweight tool usable by non-technical users;
+- structure and document a small front-end project for public review.
 
 ## Known Limitations
 
