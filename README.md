@@ -35,8 +35,6 @@ The student follows the scrolling notes and reads them aloud in real time. The s
 - Keyboard-based interaction
 - Lightweight static web implementation
 
-
-
 ## Controls
 
 | Input | Action |
@@ -76,6 +74,51 @@ Score increases while the exercise continues
         v
 Scrolling speed and visual progression increase over time
 ```
+
+## Classroom Use and Observed Results
+
+This tool was used as a reinforcement exercise for students who were already showing good progress with traditional note-reading methods.
+
+It was not designed to replace standard solfeggio activities, but to support and strengthen real-time staff-reading fluency. The exercise was used alongside traditional reading practice, oral note recognition and teacher-guided correction.
+
+The main goal was to improve first-sight reading fluency: students had to follow the scrolling staff and read the notes aloud while errors were registered during the exercise.
+
+### Evaluation approach
+
+The activity was evaluated using two practical indicators:
+
+- **score**, used as a proxy for reading continuity and endurance;
+- **error count**, manually registered during the exercise.
+
+Higher scores indicate that the student was able to continue reading for a longer time while keeping up with the scrolling staff. However, the score alone is not sufficient: it must be interpreted together with the error rate.
+
+For this reason, the most meaningful indicator is the number of errors relative to the achieved score.
+
+| Performance profile | Score range | Error-rate interpretation | Reading fluency |
+|---|---:|---:|---|
+| Developing fluency | Low to medium score | High number of errors relative to score | The student can follow the exercise but still loses accuracy under time pressure |
+| Stable fluency | Medium to high score | Moderate number of errors relative to score | The student reads continuously with occasional mistakes |
+| Strong first-sight fluency | High score | Low number of errors relative to score | The student maintains accuracy even as scrolling speed increases |
+
+### Observed outcome
+
+The tool was especially useful for students who had already developed basic note-recognition skills through other methods.
+
+After repeated use, their first-sight reading improved noticeably: students became faster in recognizing note positions and more confident when reading continuously.
+
+A relevant observation was that approximately 20% of the students were able to keep their error count low even while the score increased. This suggests that, for this group, the exercise supported not only longer reading endurance but also stable accuracy under increasing speed.
+
+These results should be interpreted as observational feedback from classroom use rather than as a controlled experimental study.
+
+### Score and error-rate interpretation
+
+For classroom use, the following interpretation was adopted:
+
+| Indicator | Meaning |
+|---|---|
+| High score + high errors | Good endurance, but unstable accuracy |
+| Medium score + low errors | Good control, but limited reading duration |
+| High score + low errors | Strong fluency and reliable first-sight reading |
 
 ## Project Structure
 
