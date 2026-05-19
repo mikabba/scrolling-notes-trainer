@@ -1,5 +1,7 @@
 # Scrolling Notes Trainer
 
+<img src="assets/game-interface.png" alt="Scrolling Notes Trainer interface" width="600">
+
 A lightweight web-based music education tool designed to support real-time staff-reading practice for beginner students.
 
 The application displays randomly generated notes on a scrolling staff. Students read the notes aloud while the teacher or student tracks reading errors during the exercise.
@@ -33,21 +35,7 @@ The student follows the scrolling notes and reads them aloud in real time. The s
 - Keyboard-based interaction
 - Lightweight static web implementation
 
-## Screenshots
 
-Add screenshots inside the `assets/` folder and update the paths below.
-
-### Game Interface
-
-```html
-<img src="assets/game-interface.png" alt="Scrolling Notes Trainer interface" width="600">
-```
-
-### Exercise in Progress
-
-```html
-<img src="assets/exercise-in-progress.png" alt="Scrolling notes exercise in progress" width="600">
-```
 
 ## Controls
 
